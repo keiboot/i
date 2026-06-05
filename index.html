@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Keitoo - Editor de video profesional. Portafolio de edición con After Effects y Premiere Pro para creadores y empresas.">
     <title>Keitoo | Editor de Video</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -14,31 +15,81 @@
             <nav>
                 <a href="index.html" class="active">Inicio</a>
                 <a href="proyectos.html">Proyectos</a>
-                <a href="sobremi.html">Sobre Mí</a>
                 <a href="contacto.html">Contacto</a>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="hero-section" style="padding-top: 120px; padding-bottom: 60px; min-height: auto;">
-            <video class="hero-video" autoplay muted loop playsinline>
-                <source src="EMY.mp4" type="video/mp4">
-            </video>
-            <div class="hero-overlay"></div>
+        <!-- HERO PRINCIPAL -->
+        <section class="seccion-hero">
+            <div class="hero-fondo-decorativo"></div>
 
-            <h1 style="font-size: 4.5rem;">Soy <span style="color: #ff002b; text-shadow: 0 0 20px rgba(255, 0, 43, 0.8), ;">Keitoo</span> <br><span style="color: #fff; text-shadow: 0 0 20px rgba(255,255,255,0.8), 0 0 40px var(--brillo-neon);">Editor de video</span></h1>
-            <p style="font-size: 1.5rem; font-weight: 500; color: #fff;">Si buscas esclavo, estas en el lugar correcto.</p>
-            
-            <a href="contacto.html" class="btn-glow" style="font-size: 1.1rem; padding: 15px 40px;">Contratar esclavo?</a>
+            <h1 class="hero-titulo-grande">
+                <span class="acento-rojo">Keitoo</span> EDITOR
+                <br>PORTAFOLIO
+            </h1>
 
-           <div class="hero-video-embed">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/FsHG9Mp_J8g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
+            <div class="bloque-presentacion">
+                <div class="presentacion-texto">
+                    <p class="presentacion-saludo">Hey!</p>
+                    <p class="presentacion-descripcion">
+                        Soy Marck, editor de video sincero, con 3 años de experiencia, capaz de adaptarse a cualquier estilo de edición o experimentar para desarrollar nuevos estilos, ya sea para personas y/o empresas. Sigo expandiendo aún más mis conocimientos en edición y desarrollo multimedia para mejorar la calidad de mi trabajo.
+                    </p>
+                </div>
+
+                <div class="habilidades-contenedor" id="contenedor-habilidades">
+                    <div class="habilidad-item">
+                        <div class="habilidad-icono icono-pr">Pr</div>
+                        <div class="habilidad-info">
+                            <div class="habilidad-nombre-fila">
+                                <span class="habilidad-nombre">Premiere Pro</span>
+                                <span class="habilidad-porcentaje">95%</span>
+                            </div>
+                            <div class="habilidad-barra-fondo">
+                                <div class="habilidad-barra-progreso barra-pr" data-ancho="95%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="habilidad-item">
+                        <div class="habilidad-icono icono-ae">Ae</div>
+                        <div class="habilidad-info">
+                            <div class="habilidad-nombre-fila">
+                                <span class="habilidad-nombre">After Effects</span>
+                                <span class="habilidad-porcentaje">80%</span>
+                            </div>
+                            <div class="habilidad-barra-fondo">
+                                <div class="habilidad-barra-progreso barra-ae" data-ancho="80%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="habilidad-item">
+                        <div class="habilidad-icono icono-ps">Ps</div>
+                        <div class="habilidad-info">
+                            <div class="habilidad-nombre-fila">
+                                <span class="habilidad-nombre">Photoshop</span>
+                                <span class="habilidad-porcentaje">70%</span>
+                            </div>
+                            <div class="habilidad-barra-fondo">
+                                <div class="habilidad-barra-progreso barra-ps" data-ancho="70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VIDEO DE PRESENTACIÓN -->
+            <div class="video-presentacion">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/FsHG9Mp_J8g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <a href="contacto.html" class="btn-glow" id="btn-contratar">Trabajemos juntos</a>
         </section>
 
-
-        <div class="carousel-wrapper" style="margin-top: 0;">
+        <!-- CARRUSEL DE TESTIMONIOS -->
+        <div class="carousel-wrapper">
             <div class="carousel-track">
                 <div class="testimonio-card">
                     <div class="perfil-testimonio">
@@ -76,6 +127,7 @@
                     <p class="comentario">"La edición vertical para nuestras redes multiplicó nuestro engagement. Sabe cómo retener a la audiencia."</p>
                 </div>
 
+                <!-- Duplicados para el loop infinito -->
                 <div class="testimonio-card">
                     <div class="perfil-testimonio">
                         <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=150&auto=format&fit=crop" alt="Foto">
@@ -114,29 +166,22 @@
             </div>
         </div>
 
-      
-
-
-
-
-        
+        <!-- PROGRAMAS QUE USO -->
         <section class="clientes-section container">
             <h2 class="titulo-seccion">Programas que <span>uso</span></h2>
             <div class="clientes-grid">
                 <a href="https://www.adobe.com/es/creativecloud/pro.html" class="cliente-item"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Adobe_Premiere_Pro_CC_icon.svg/3840px-Adobe_Premiere_Pro_CC_icon.svg.png" width="50"><span class="cliente-nombre">Premiere Pro</span></a>
                 <a href="https://www.adobe.com/es/creativecloud/pro.html" class="cliente-item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Adobe_After_Effects_CC_icon.svg/960px-Adobe_After_Effects_CC_icon.svg.png?_=20210519030120" width="50"><span class="cliente-nombre">After Effects</span></a>
                 <a href="https://www.adobe.com/es/creativecloud/pro.html" class="cliente-item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/960px-Adobe_Photoshop_CC_icon.svg.png" width="50"><span class="cliente-nombre">Photoshop</span></a>
-                <a href="https://apps.apple.com/us/app/alight-motion/id1459833443" class="cliente-item"><img src="alight motion logo.png" width="50"><span class="cliente-nombre">alight motion</span></a>
-                
+                <a href="https://apps.apple.com/us/app/alight-motion/id1459833443" class="cliente-item"><img src="alight motion logo.png" width="50"><span class="cliente-nombre">Alight Motion</span></a>
             </div>
         </section>
     </main>
 
     <footer class="universal-footer">
         <div class="footer-content">
-            <p style="font-size: 1.5rem; font-weight: 500; color: #fff;">Aqui mis <span style="color: #ff002b; text-shadow: 0 0 20px rgba(255, 0, 43, 0.8), ;">redes</span></p>
+            <p>Aquí mis <span>redes</span></p>
             <div class="footer-socials">
-                
                 <a href="https://www.instagram.com/keitoo_tq/" target="_blank" title="Instagram">Instagram</a>
                 <a href="https://www.youtube.com/@_Keitoo" target="_blank" title="YouTube">YouTube</a>
                 <a href="https://x.com/keitoo__" target="_blank" title="Twitter">Twitter</a>
@@ -145,6 +190,19 @@
             <p class="footer-copy">&copy; 2026 <span>Keitoo</span>. Todos los derechos reservados. | Políticas de Privacidad</p>
         </div>
     </footer>
+
+    <script>
+        // Animación de barras de habilidades al cargar
+        window.addEventListener('DOMContentLoaded', () => {
+            const barras = document.querySelectorAll('.habilidad-barra-progreso');
+            setTimeout(() => {
+                barras.forEach(barra => {
+                    const ancho = barra.getAttribute('data-ancho');
+                    barra.style.width = ancho;
+                });
+            }, 300);
+        });
+    </script>
 
 </body>
 </html>

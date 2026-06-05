@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto | Mi Portafolio</title>
+    <meta name="description" content="Contacta a Keitoo para cotizar edición de video profesional. Formulario de contacto y redes sociales.">
+    <title>Contacto | Keitoo</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,7 +15,6 @@
             <nav>
                 <a href="index.html">Inicio</a>
                 <a href="proyectos.html">Proyectos</a>
-                <a href="sobremi.html">Sobre Mí</a>
                 <a href="contacto.html" class="active">Contacto</a>
             </nav>
         </div>
@@ -33,7 +33,7 @@
                 <div class="redes-lista">
                     <!-- Instagram -->
                     <a href="https://www.instagram.com/keitoo_tq/" class="red-item">
-                        <div class="red-icon"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1280px-Instagram_icon.png" width="60" alt=""></div>
+                        <div class="red-icon"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1280px-Instagram_icon.png" width="48" alt="Instagram"></div>
                         <div class="red-texto">
                             <strong>Instagram</strong>
                             <span>Mira un poco de mi vida personal.</span>
@@ -41,23 +41,23 @@
                     </a>
                     <!-- Discord -->
                     <a href="https://discord.gg/qmnj5buH" class="red-item">
-                        <div class="red-icon"><img src="https://images.icon-icons.com/2108/PNG/512/discord_icon_130958.png" width="60"></div>
+                        <div class="red-icon"><img src="https://images.icon-icons.com/2108/PNG/512/discord_icon_130958.png" width="48" alt="Discord"></div>
                         <div class="red-texto">
                             <strong>Discord</strong>
-                            <span>Chat en vivo, revisión de proyectos, llamada en vivo y cotizacion. </span>
+                            <span>Chat en vivo, revisión de proyectos, llamada en vivo y cotización.</span>
                         </div>
                     </a>
                     <!-- X (Twitter) -->
                     <a href="https://x.com/keitoo__" class="red-item">
-                        <div class="red-icon"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/X_icon.svg/3840px-X_icon.svg.png" width="60"></div>
+                        <div class="red-icon"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/X_icon.svg/3840px-X_icon.svg.png" width="48" alt="X"></div>
                         <div class="red-texto">
                             <strong>X (Twitter)</strong>
-                            <span>Aqui puedes cotizar y preguntar por chat en vivo.</span>
+                            <span>Aquí puedes cotizar y preguntar por chat en vivo.</span>
                         </div>
                     </a>
-                    <!-- Correo Directo -->
+                    <!-- YouTube -->
                     <a href="https://www.youtube.com/@_Keitoo" class="red-item">
-                        <div class="red-icon"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png" width="60"></div>
+                        <div class="red-icon"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png" width="48" alt="YouTube"></div>
                         <div class="red-texto">
                             <strong>Canal de Youtube</strong>
                             <span>Puedes ver un poco de mi contenido.</span>
@@ -66,46 +66,36 @@
                 </div>
             </div>
 
-            <!-- Lado Derecho: Formulario Corregido -->
+            <!-- Lado Derecho: Formulario -->
             <div class="contacto-formulario">
-                <!-- Se añadió event.preventDefault() para que no colapse ni reinicie la página -->
-                <!-- Formulario conectado a tu correo real -->
-    <form action="https://api.web3forms.com/submit" method="POST">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="97c3e741-0c5d-4dba-90ae-2fc8c4934719">
 
-    <!-- REEMPLAZA ESTO: Pon aquí la clave que te dé Web3Forms -->
-    <input type="hidden" name="access_key" value="97c3e741-0c5d-4dba-90ae-2fc8c4934719">
-
-    <div class="form-group" >
-        
-    </div>
-    <div class="form-group">
-        <input type="text" name="nombre" class="form-control" placeholder="Tu Nombre o Marca" required>
-    </div>
-    <div class="form-group">
-        <input type="email" name="correo" class="form-control" placeholder="Tu Correo Electrónico" required>
-    </div>
-     <div class="form-group">
-        <input type="text" name="Usuario" class="form-control" placeholder="Discord / Twitter" required>
-    </div>
-    <div class="form-group">
-        <textarea name="mensaje" rows="6" class="form-control" placeholder="Cuéntame sobre el tipo de edición que necesitas..." required></textarea>
-    </div>
-    
-    <!-- Redirección opcional después de enviar (puedes mandarlos de vuelta a index.html) -->
-    <input type="hidden" name="redirect" value="https://tuweb.com/index.html">
-
-    <button type="submit" class="btn-glow" style="width: 100%;">Enviar Mensaje</button>
-</form>
+                    <div class="form-group">
+                        <input type="text" name="nombre" class="form-control" placeholder="Tu Nombre o Marca" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="correo" class="form-control" placeholder="Tu Correo Electrónico" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="Usuario" class="form-control" placeholder="Discord / Twitter" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="mensaje" rows="6" class="form-control" placeholder="Cuéntame sobre el tipo de edición que necesitas..." required></textarea>
+                    </div>
+                    
+                    <input type="hidden" name="redirect" value="https://tuweb.com/index.html">
+                    <button type="submit" class="btn-glow" id="btn-enviar-mensaje">Enviar Mensaje</button>
+                </form>
             </div>
 
         </div>
     </main>
 
-     <footer class="universal-footer">
+    <footer class="universal-footer">
         <div class="footer-content">
-            <p style="font-size: 1.5rem; font-weight: 500; color: #fff;">Aqui mis <span style="color: #ff002b; text-shadow: 0 0 20px rgba(255, 0, 43, 0.8), ;">redes</span></p>
+            <p>Aquí mis <span>redes</span></p>
             <div class="footer-socials">
-                
                 <a href="https://www.instagram.com/keitoo_tq/" target="_blank" title="Instagram">Instagram</a>
                 <a href="https://www.youtube.com/@_Keitoo" target="_blank" title="YouTube">YouTube</a>
                 <a href="https://x.com/keitoo__" target="_blank" title="Twitter">Twitter</a>
@@ -114,7 +104,6 @@
             <p class="footer-copy">&copy; 2026 <span>Keitoo</span>. Todos los derechos reservados. | Políticas de Privacidad</p>
         </div>
     </footer>
-    
 
 </body>
 </html>

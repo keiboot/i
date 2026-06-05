@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyectos | Mi Portafolio</title>
+    <meta name="description" content="Proyectos de edición de video por Keitoo. Videos horizontales, Shorts y Reels.">
+    <title>Proyectos | Keitoo</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,7 +15,6 @@
             <nav>
                 <a href="index.html">Inicio</a>
                 <a href="proyectos.html" class="active">Proyectos</a>
-                <a href="sobremi.html">Sobre Mí</a>
                 <a href="contacto.html">Contacto</a>
             </nav>
         </div>
@@ -22,7 +22,7 @@
 
     <main class="container">
         <h2 class="titulo-seccion">Porta<span>folio</span></h2>
-        <p style="text-align: center; color: var(--texto-secundario); margin-top: -30px; margin-bottom: 30px;">
+        <p id="texto-filtro-descripcion">
             Cada proyecto es una historia. Filtra por tipo de contenido.
         </p>
 
@@ -33,12 +33,12 @@
         </div>
 
         <div id="seccion-largos" class="seccion-proyectos">
-            <h3 style="color: #fff; margin-bottom: 20px; font-size: 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px;">Videos Horizontales</h3>
+            <h3>Videos Horizontales</h3>
             <div class="portfolio-grid-small">
                 
                 <div class="video-card" data-video="9bZkp7q19f0" data-tipo="largo" onclick="abrirModal(this)">
                     <div class="video-thumbnail">
-                        <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=600&auto=format&fit=crop" alt="Proyecto">
+                        <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=600&auto=format&fit=crop" alt="Campaña Comercial">
                         <div class="play-icon">▶️</div>
                     </div>
                     <div class="video-info">
@@ -49,7 +49,7 @@
 
                 <div class="video-card" data-video="dQw4w9WgXcQ" data-tipo="largo" onclick="abrirModal(this)">
                     <div class="video-thumbnail">
-                        <img src="https://images.unsplash.com/photo-1536240478700-b869070f9279?q=80&w=600&auto=format&fit=crop" alt="Proyecto">
+                        <img src="https://images.unsplash.com/photo-1536240478700-b869070f9279?q=80&w=600&auto=format&fit=crop" alt="Videoclip Musical">
                         <div class="play-icon">▶️</div>
                     </div>
                     <div class="video-info">
@@ -60,7 +60,7 @@
 
                 <div class="video-card" data-video="SIkI-ACa-Qc" data-tipo="largo" onclick="abrirModal(this)">
                     <div class="video-thumbnail">
-                        <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=600&auto=format&fit=crop" alt="Proyecto">
+                        <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=600&auto=format&fit=crop" alt="Documental Corto">
                         <div class="play-icon">▶️</div>
                     </div>
                     <div class="video-info">
@@ -71,34 +71,42 @@
             </div>
         </div>
 
-        <div id="seccion-cortos" class="seccion-proyectos" style="margin-top: 50px;">
-            <h3 style="color: #fff; margin-bottom: 20px; font-size: 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px;">Reels & Shorts</h3>
+        <div id="seccion-cortos" class="seccion-proyectos">
+            <h3>Reels &amp; Shorts</h3>
             <div class="shorts-grid">
                 
                 <div class="short-card" data-video="G3e-cpL7ofc" data-tipo="corto" onclick="abrirModal(this)">
-                    <img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?q=80&w=400&auto=format&fit=crop" alt="TikTok 1">
-                    <div class="play-icon">K</div>
+                    <img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?q=80&w=400&auto=format&fit=crop" alt="Short Keitoo">
+                    <div class="play-icon">▶️</div>
+                    <div class="nombre-short">
+                        <span>Keitoo</span>
+                    </div>
                 </div>
 
                 <div class="short-card" data-video="G3e-cpL7ofc" data-tipo="corto" onclick="abrirModal(this)">
-                    <img src="https://images.unsplash.com/photo-1586899028174-e7098604235b?q=80&w=400&auto=format&fit=crop" alt="Short 2">
-                    <div class="play-icon">K</div>
+                    <img src="https://images.unsplash.com/photo-1586899028174-e7098604235b?q=80&w=400&auto=format&fit=crop" alt="Short Challenger">
+                    <div class="play-icon">▶️</div>
+                    <div class="nombre-short">
+                        <span>Challenger Performance</span>
+                    </div>
                 </div>
 
                 <div class="short-card" data-video="G3e-cpL7ofc" data-tipo="corto" onclick="abrirModal(this)">
-                    <img src="https://images.unsplash.com/photo-1616469829581-73993eb86b02?q=80&w=400&auto=format&fit=crop" alt="Short 3">
-                    <div class="play-icon">Kreysi</div>
+                    <img src="https://images.unsplash.com/photo-1616469829581-73993eb86b02?q=80&w=400&auto=format&fit=crop" alt="Short Kreysi">
+                    <div class="play-icon">▶️</div>
+                    <div class="nombre-short">
+                        <span>Kreysi</span>
+                    </div>
                 </div>
 
             </div>
         </div>
     </main>
 
-     <footer class="universal-footer">
+    <footer class="universal-footer">
         <div class="footer-content">
-            <p style="font-size: 1.5rem; font-weight: 500; color: #fff;">Aqui mis <span style="color: #ff002b; text-shadow: 0 0 20px rgba(255, 0, 43, 0.8), ;">redes</span></p>
+            <p>Aquí mis <span>redes</span></p>
             <div class="footer-socials">
-                
                 <a href="https://www.instagram.com/keitoo_tq/" target="_blank" title="Instagram">Instagram</a>
                 <a href="https://www.youtube.com/@_Keitoo" target="_blank" title="YouTube">YouTube</a>
                 <a href="https://x.com/keitoo__" target="_blank" title="Twitter">Twitter</a>
@@ -108,6 +116,7 @@
         </div>
     </footer>
 
+    <!-- MODAL DE VIDEO -->
     <div class="modal-overlay" id="videoModal" onclick="cerrarModal(event)">
         <div class="modal-content" id="modalContent">
             <button class="cerrar-modal" onclick="cerrarModal(event)">&times;</button>
@@ -116,57 +125,49 @@
     </div>
 
     <script>
-        // Función para abrir el video flotante
+        // Abrir video en modal flotante
         function abrirModal(elemento) {
             const modal = document.getElementById('videoModal');
             const iframe = document.getElementById('iframeVideo');
             const modalContent = document.getElementById('modalContent');
             
-            // Obtener datos de la tarjeta que se hizo clic
             const videoId = elemento.getAttribute('data-video');
             const tipo = elemento.getAttribute('data-tipo');
 
-            // Ajustar el tamaño dependiendo si es YouTube o TikTok/Short
             if(tipo === 'corto') {
                 modalContent.classList.add('formato-vertical');
             } else {
                 modalContent.classList.remove('formato-vertical');
             }
 
-            // Poner el video en el iframe y activar autoplay
             iframe.src = "https://www.youtube.com/embed/" + videoId + "?autoplay=1&rel=0";
-            
-            // Mostrar el fondo desenfocado
             modal.classList.add('activo');
-            document.body.style.overflow = 'hidden'; // Evitar que la página haga scroll de fondo
+            document.body.style.overflow = 'hidden';
         }
 
-        // Función para cerrar
+        // Cerrar modal
         function cerrarModal(event) {
-            // Cierra si hacen clic en la X o fuera del video
             if(event.target.id === 'videoModal' || event.target.className === 'cerrar-modal') {
                 const modal = document.getElementById('videoModal');
                 const iframe = document.getElementById('iframeVideo');
                 
                 modal.classList.remove('activo');
                 setTimeout(() => {
-                    iframe.src = ""; // Apaga el video
-                    document.body.style.overflow = 'auto'; // Devuelve el scroll a la página
-                }, 300); // Espera a que termine la animación
+                    iframe.src = "";
+                    document.body.style.overflow = 'auto';
+                }, 300);
             }
         }
 
-        // Función de los Filtros
+        // Filtros de categoría
         function filtrarProyectos(categoria) {
             const botones = document.querySelectorAll('.btn-filtro');
             const secLargos = document.getElementById('seccion-largos');
             const secCortos = document.getElementById('seccion-cortos');
 
-            // Actualizar botones (pintar el activo)
             botones.forEach(btn => btn.classList.remove('activo'));
             event.target.classList.add('activo');
 
-            // Mostrar/Ocultar secciones
             if(categoria === 'todos') {
                 secLargos.style.display = 'block';
                 secCortos.style.display = 'block';
